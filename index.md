@@ -1,4 +1,3 @@
-@[toc]
 ## 标题
 ```
 # A first-level heading
@@ -10,7 +9,6 @@
 使用两个或多个标题时，GitHub 会自动生成一个目录，可以通过单击文件标题中的  来访问该目录。 每个标题都列在目录中，可以单击某个标题导航到所选部分。
 
 ![](https://docs.github.com/assets/cb-82863/mw-1440/images/help/repository/headings-toc.webp)
-@[toc]
 ## 文本样式
 |Style|符号|快捷键|示例|
 |---|---|---|---|
@@ -21,14 +19,12 @@
 |全部粗体和斜体|`*** ***`||***All this text is important***|
 |下标|`<sub></sub>`||This is a <sub>subscript</sub> text|
 上标|`<sup> </sup>`||This is a <sup>superscript</sup> text|
-@[toc]
 ## 引用文本
 可以使用 > 来引用文本。
 ```
 > Text that is a quote
 ```
 > 引用文本缩进，具有不同的类型颜色。
-@[toc]
 ## 引用代码
 使用单反引号可标注句子中的代码或命令。
 
@@ -58,7 +54,6 @@ require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
-@[toc]
 ## 链接
 通过将链接文本用方括号 `[ ]` 括起来，然后将 URL 用括号 `( )` 括起来，可创建内联链接。
 
@@ -71,7 +66,6 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 链接文本应位于一行上。 下面的示例将不起作用。
 ### 相对链接
 ......
-@[toc]
 ## 图像
 通过添加 `!` 并将 alt 文本用 `[ ]` 括起来，可显示图像。 替换文字是等效于图像中信息的短文本。 然后将图像的链接用括号 `()` 括起来。
 ### 指定图像显示的主题
@@ -91,7 +85,6 @@ This site was built using [GitHub Pages](https://pages.github.com/).
   <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
 </picture>
 
-@[toc]
 ## 列表
 可通过在一行或多行文本前面加上 `-`、`*` 或 `+` 来创建一个无序列表。
 
@@ -111,7 +104,6 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 1. First list item
    - First nested list item
      - Second nested list item
-@[toc]
 ## 任务列表
 若要创建任务列表，请在列表项前加连字符和空格，后接 `[ ]`。 要将任务标记为完成，请使用 `[x]`。
 ```
@@ -123,19 +115,15 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 - [ ] https://github.com/octo-org/octo-repo/issues/740
 - [ ] Add delight to the experience when all tasks are complete :tada:
 如果任务列表项说明以括号开头，则需要使用 \ 进行转义：
-@[toc]
 ## 提及人员和团队
 可以在 GitHub 上提及人员或团队，方法是键入 @ 加上其用户名或团队名称。 这将触发通知并提请他们注意对话。 如果您在编辑的评论中提及某人的用户名或团队名称，该用户也会收到通知。
-@[toc]
 ## 使用表情符号
 你可以通过键入 `:EMOJICODE` :（冒号后跟表情符号的名称）将表情符号添加到写作中。
 键入 : 将显示建议的表情符号列表。 列表将在你键入时进行筛选，因此一旦找到所需表情符号，请按 Tab 或 Enter 键以填写突出显示的结果 。
 
 >有关可用表情符号和代码的完整列表，请参阅 Emoji-Cheat-Sheet。
-@[toc]
 ## 段落
 通过在文本行之间留一个空白行，可创建新段落。
-@[toc]
 ## 脚注
 您可以使用此括号语法为您的内容添加脚注：
 ```
@@ -156,7 +144,6 @@ A footnote can also have multiple lines[^2].
   This is a second line.
 
 Wiki 不支持脚注。
-@[toc]
 ## 警报
 警报是基于块引用语法的 Markdown 扩展，可用于强调关键信息。 在 GitHub 上，它们以独特的颜色和图标显示，以指示内容的显著性。
 
@@ -192,17 +179,14 @@ Wiki 不支持脚注。
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
-@[toc]
 ## 隐藏有评论的内容
 您可以通过在 HTML 评论中加入内容来指示 GitHub 隐藏渲染的 Markdown 中的内容。
 ```
 <!-- This content will not appear in the rendered Markdown -->
 ```
 <!-- This content will not appear in the rendered Markdown -->
-@[toc]
 ## 忽略 Markdown 格式
 通过在 Markdown 字符前面输入 \，可指示 GitHub 忽略 Markdown 格式（或对其进行转义）。
-@[toc]
 ## 使用表格组织信息
 ### 创建表
 可以使用竖线 | 和连字符 - 创建表。 连字符用于创建每列的标题，而竖线用于分隔每列。 必须在表格前包含空白链接，以便其正确呈现。
@@ -243,7 +227,6 @@ Wiki 不支持脚注。
 | :---         |     :---:      |          ---: |
 | git status   | git status     | git status    |
 | git diff     | git diff       | git diff      |
-@[toc]
 ## 使用折叠部分组织信息
 ### 创建折叠部分
 可以通过创建读者可以选择展开的折叠部分来暂时隐藏 Markdown 的分区。
@@ -284,7 +267,6 @@ You can add an image or a code block, too.
 
 </details>
 
-@[toc]
 ## 创建关系图
 ### 关于创建关系图
 可以使用以下三种不同的语法在 Markdown 中创建关系图：mermaid、geoJSON 和 topoJSON、ASCII STL。 关系图可在以下项中呈现：GitHub Issues、GitHub Discussions、拉取请求、Wiki 和 Markdown 文件。
@@ -303,6 +285,5 @@ graph TD;
     C-->D;
 ```
 ````
-@[toc]
 ## 编写数学表达式
 ......
